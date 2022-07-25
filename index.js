@@ -4,5 +4,5 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3000;
 
-app.get('/', (req, res) => res.send(`<h1> Listening on port: ${port} </h1>`));
-app.listen(port, () => console.log(`Online: ${port}`));
+app.get('/', (_req, res) => res.send(`<h2> Listening on port: ${port} </h2>`));
+app.listen(port, () => `Online: ${port}`);
